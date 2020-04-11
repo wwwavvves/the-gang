@@ -52,28 +52,28 @@ h4{
 }
 
 .character1{
-	background: url(img/circle-guy.png) no-repeat 0 0;
+	background: url(img/character1.png) no-repeat 0 0;
 	background-size: 100%;
-	width: 300px;
+	width: 363px;
 	height: 344px;
-	position: absolute; top: 117px; right: 89px;
+	position: absolute; top: 10%; right: 10%;
 	transform: rotate(15deg);
 }
 
 .character2{
-	background: url(img/sticky-guy-1.png) no-repeat 0 0;
+	background: url(img/character2.png) no-repeat 0 0;
 	background-size: 100%;
-	width: 200px;
+	width: 309px;
 	height: 371px;
-	position: absolute; top: 170px; right: 290px;
+	position: absolute; top: 213px; right: 277px;
 }
 
 .character3{
-	background: url(img/eish-guy.png) no-repeat 0 0;
+	background: url(img/character3.png) no-repeat 0 0;
 	background-size: 100%;
-	width: 200px;
+	width: 297px;
 	height: 286px;
-	position: absolute; top: 260px; right: 160px;
+	position: absolute; bottom: 74px; right: 109px;
 }
 
 a.cta,
