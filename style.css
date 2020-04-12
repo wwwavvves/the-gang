@@ -11,11 +11,6 @@ h1{
 	font-size: 50px;
 }
 
-h2{
-	font-weight: 800;
-	font-size: 50px;
-}
-
 h3{
 	font-weight: bold;
 	font-size: 30px;
@@ -24,12 +19,6 @@ h3{
 h4{
 	font-weight: bold:
 	font-size: 20px;
-}
-
-p{
-	font-weight: bold;
-	font-size: 30px;
-	margin: 30px 0;
 }
 
 .wrapper{
@@ -153,17 +142,15 @@ nav ul li a{
 	line-height: 30px;
 }
 
-.more-info{
- text-align: center;
-}
-
-
 /*
 
-<div class="more-info" id="more-info">
-		<h2>Join Our Fan Club</h2>
-		<p>Every week we have <span class="highlight">a party.</span> If you want to join us then join our fan club. Members will also receive pictures of us in all kinds of shapes and sizes. Cool huh?</p>
-		<button class="cta">Sign Me Up!</button>
-	</div>
+<nav>
+		<a href="#" class="logo">The Gang</a>
+		<ul>
+			<li><a href="#">Sign Up</a></li>
+			<li><a href="#story">The Story</a></li>
+			<li><a href="#more-info">More Info</a></li>
+		</ul>
+	</nav>
 
 */
