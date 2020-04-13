@@ -266,32 +266,129 @@ footer a{
 }
 
 .popup{
-	display: none;
+	/*display: none;*/
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 2;
 }
 
+.popup .blanket{
+	background-color: rgba(0,0,0,.7);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.popup .content{
+	box-sizing: border-box;
+	padding: 30px 40px;
+	width: 960px;
+	height: 500px;
+	background-color: white;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -250px;
+	margin-left: -480px;
+}
+
+.popup h2{
+	margin: 10px 0 20px;
+}
+
+.popup .cta{
+	margin-top: 40px;
+}
+
+.popup .close{
+	width: 80px;
+	height: 80px;
+	background: #FF3300 url(img/close.png) no-repeat center center;
+	background-size: 50%;
+	position: absolute;
+	top: -40px;
+	right: -40px;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	overflow: hidden;
+	text-indent: -999px;
+	cursor: pointer;
+}
+
+.popup .row{
+
+}
+
+.popup .row:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.popup .item{
+	float: left;
+	width: 415px;
+	margin-left: 40px;
+	text-align: left;
+}
+
+.popup .item:first-child{
+	margin-left: 0;
+}
+
+.popup .item label{
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.popup .item input[type='text']{
+	display: block;
+	font-size: 30px;
+	font-weight: bold;
+	border: 4px solid #111111;
+	height: 70px;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 15px 20px;
+}
 
 
 /*
 
-<div class="sep"></div>
-	<div class="story" id="story">
-		<ul class="nb-list">
-			<li class="blue">Rock n' Roll</li>
-			<li class="gray">&nbsp</li>
-			<li class="yellow dragging">Laughter</li>
-			<li class="red">Square Offs</li>
-			<li class="pink">Circuitous Routes</li>
-			<li class="salmon">Trigonometry</li>
-			<li class="blue">Red Hats</li>
-			<li class="yellow">Being Silly</li>
-		</ul>
-		<h3>Left: Things We Find Important<br/>
-		Below: Our Story</h3>
-		<p>Once upon a time there was a group of shapes. They were mostly back and rectangular. They were mean and very serious.</p>
-		<p>And so they kicked the 3 shapes that didn't conform out of their gang, which was called the Right Angled Gang.</p>
-		<p>And so these 3 shapes were very sad, but found great joy and comfort being around each other. They soon started having a lot of fun, started rocking and rolling, started being silly, and became the most well-known shape gang in the universe.</p>
-		<p>They even started making fun of squares and rectangles in what they like to call 'Square Offs'!</p>
+<div class="popup">
+		<div class="blanket"></div>
+		<div class="content">
+			<h2>Fill In Your Details</h2>
+			<form action="">
+				<div class="item">
+					<label>Your First Name</label>
+					<input type="text" placeholder="Awesomeface" value="Shirley">
+				</div>
+				<div class="item">
+					<label>Your Last Name</label>
+					<input type="text" placeholder="Circleface">
+				</div>
+				<div class="item">
+					<label>Your Favourite Place</label>
+					<input type="text" placeholder="Pink">
+				</div>
+				<div class="item">
+					<label>Your Favourite Food</label>
+					<input type="text" placeholder="Apple Pie">
+				</div>
+				<button class="cta">I Want In!</button>
+			</form>
+			<button class="close">Close</button>
+		</div>
 	</div>
-	<div class="sep"></div>
 
-*/
+	*/
